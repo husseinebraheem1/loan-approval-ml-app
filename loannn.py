@@ -217,7 +217,7 @@ def machine_learning():
 
         # Apply the same Label Encoding as in training
         columns_to_encode = ['person_home_ownership', 'loan_intent', 'loan_grade', 'cb_person_default_on_file']
-        train_data = pd.read_csv(os.path.join(base_path, "Loan approval prediction.csv"))
+        train_data = pd.read_csv("Loan approval prediction.csv")
         for column in columns_to_encode:
             le = LabelEncoder()
             le.fit(train_data[column])
@@ -253,6 +253,7 @@ if __name__ == "__main__":
     main()
 
     
+
 
 
 
