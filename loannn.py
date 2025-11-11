@@ -187,12 +187,7 @@ def machine_learning():
     Provide the necessary details below to predict whether the loan will be approved or not.
     """)
 
-    # Base paths for model file
-    base_path = os.path.dirname(__file__)
-    model_path = os.path.join(base_path, "models", "xgb_loan_model.pkl")
-
-    # Load model
-    model = joblib.load(model_path)
+   model = joblib.load("xgb_loan_model.pkl")
 
     # Applicant input fields
     person_age = st.number_input("Age", min_value=18, max_value=100, value=30)
@@ -259,4 +254,5 @@ if __name__ == "__main__":
     main()
 
     
+
 
