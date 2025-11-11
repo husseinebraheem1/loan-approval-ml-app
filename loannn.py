@@ -187,8 +187,7 @@ def machine_learning():
     Provide the necessary details below to predict whether the loan will be approved or not.
     """)
 
-   model = joblib.load("xgb_loan_model.pkl")
-
+    model = joblib.load("xgb_loan_model.pkl")
     # Applicant input fields
     person_age = st.number_input("Age", min_value=18, max_value=100, value=30)
     person_income = st.number_input("Annual Income", min_value=0, value=50000)
@@ -254,5 +253,6 @@ if __name__ == "__main__":
     main()
 
     
+
 
 
