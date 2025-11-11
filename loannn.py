@@ -7,6 +7,7 @@ from sklearn.ensemble import BaggingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler 
 from imblearn.over_sampling import SMOTE
+from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -257,4 +258,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
     
